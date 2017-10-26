@@ -9,7 +9,8 @@
 	"workbench.editor.enablePreview": false, // this will open files in new tab on hitting enter
 	// hiding files from the explorer bar
 	"files.exclude": {
-		"**/*.js": true,
+		// exluding js files when typescript file with same name exists
+		"**/*.js": {"when": "$(basename).ts"},
 		"**/*.js.map": true,
 		"**/*.spec.ts": true
 	}
