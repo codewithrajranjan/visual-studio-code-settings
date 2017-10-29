@@ -4,14 +4,10 @@
 	"window.menuBarVisibility": "toggle",
 	"editor.minimap.enabled": false,
 	"workbench.colorTheme": "Solarized Light",
-	// show tabs in zen mode
 	"zenMode.hideTabs" : false,
-	// show bottom status bar
 	"zenMode.hideStatusBar": false,
-	"workbench.editor.enablePreview": false, // this will open files in new tab on hitting enter
-	// hiding files from the explorer bar
+	"workbench.editor.enablePreview": false,
 	"files.exclude": {
-		// exluding js files when typescript file with same name exists
 		"**/*.js": {"when": "$(basename).ts"},
 		"**/*.js.map": true,
 		"**/*.spec.ts": true
